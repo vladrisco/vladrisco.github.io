@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>Hello World!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="_css/_my.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body {background-color: black;}
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('_img/_forest.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#feed-textarea {
+  margin-top: 21%;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Hello World!
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top"> <img src="_img/_rss.png"> RSS Feed</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center" id="date"></p>
+  </div>
+  <div id="feed-textarea" class="w3-display-middle">
+    <ul></ul>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Feed from <a href="https://krebsonsecurity.com/" target="_blank">Krebs On Security</a>
+  </div>
+</div>
+<script src="_js/feednami-client-v1.1.js"></script>
+<script src="_js/_app.js"></script>
+</body>
+</html>
